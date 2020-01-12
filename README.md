@@ -17,3 +17,9 @@ $node consumer
 ```
 $npm run test:comsumer
 ```
+
+### Step 3 :: Consumer contract testing with Pact
+* Go to branch :: [step 3](https://github.com/up1/workshop-contract-testing/tree/step-03)
+```
+$npm run test:consumer:pact
+```
