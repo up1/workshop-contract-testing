@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:consumer": "./node_modules/.bin/mocha --timeout 100000 consumer/tests/with-nock.spec.js",
+    "test:consumer:pact": "./node_modules/.bin/mocha --timeout 10000 consumer/tests/with-pact.spec.js",
     "lint": "npx prettier --write **/*.js"
   },
   "author": "",
@@ -17,6 +18,8 @@
     "superagent": "^5.2.1"
   },
   "devDependencies": {
+    "@pact-foundation/pact": "^9.6.0",
+    "@pact-foundation/pact-node": "^10.2.4",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "mocha": "^7.0.0",
